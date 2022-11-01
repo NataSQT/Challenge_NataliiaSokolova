@@ -5,6 +5,7 @@ from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 
 
 class Test(unittest.TestCase):
+    driver = None
 
     @classmethod
     def setUp(self):
