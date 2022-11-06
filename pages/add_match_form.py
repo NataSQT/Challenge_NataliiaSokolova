@@ -1,0 +1,36 @@
+from pages.base_page import BasePage
+
+
+class Dashboard(BasePage):
+    my_team_xpath = "//*[text()='My team']"
+    my_team_field_xpath = "//*[@name='myTeam']"
+    enemy_team_xpath = "//*[text()='Enemy team']"
+    enemy_team_field_xpath = "//*[@name='enemyTeam']"
+    my_team_score_xpath = "//*[text()='My team score']"
+    my_team_score_field_xpath = "//*[@name='myTeamScore']"
+    date_xpath = "//*[text()='Date']"
+    date_field_xpath = "//*[@name='date']"
+    match_at_home_radio_xpath = "//*[@class='jss30' and @value='true']"
+    match_out_home_radio_xpath = "//*[@class='jss30' and @value='false']"
+    match_at_home_xpath = "// *[text() = 'Match at home']"
+    match_out_home_xpath = "// *[text() = 'Match out home']"
+    t_shirt_color_xpath = "//*[text()='T-shirt color']"
+    t_shirt_color_field_xpath = "//*[@name='tshirt']"
+    league_xpath = "//*[text()='League']"
+    league_field_xpath = "//*[@name='league']"
+    time_played_xpath = "//*[text()='Time played']"
+    time_played_field_xpath = "//*[@name='timePlayed']"
+    number_xpath = "//*[text()='Number']"
+    number_field_xpath = "//*[@name='number']"
+    web_match_xpath = "//*[text()='Web match']"
+    web_match_field_xpath = "//*[@name='webMatch']"
+    general_xpath = "//*[text()='General']"
+    general_field_xpath = "//*[@name='general']"
+    rating_xpath = "//*[text()='Rating']"
+    rating_field_xpath = "//*[@name='rating']"
+    submit_button_xpath = "//*[@type='submit']"
+    submit_xpath = "//*[text()='Submit']"
+    clear_button_xpath = "//form/div[3]/button[2]"
+    clear_xpath = "// *[text() = 'Clear']"
+
+    pass
