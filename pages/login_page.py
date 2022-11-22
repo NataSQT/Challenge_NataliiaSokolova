@@ -9,6 +9,10 @@ class LoginPage(BasePage):
     expected_title = "Scouts panel - sign in"
     title_of_box_xpath = "//*[@id='__next']/form/div/div[1]/h5"
     header_of_box = 'Scouts Panel'
+    sign_in_button_text = "Sign in"
+    invalid_login_message_xpath = "//span[contains(@class, 'MuiTypography-root')]"
+    expected_invalid_password_message = "Identifier or password invalid."
+    expected_empty_login_message = "Please provide your username or your e-mail."
 
     def type_in_email(self, email):
         self.field_send_keys(self.login_field_xpath, email)
@@ -25,3 +29,7 @@ class LoginPage(BasePage):
     def check_title_of_box(self):
         self.assert_element_text(self.driver, self.title_of_box_xpath, self.header_of_box)
 
+    def log_in(self, email, password):
+        self.type_in_email(email)
+        self.type_in_password(password)
+        self.click_on_the_sign_in_button()

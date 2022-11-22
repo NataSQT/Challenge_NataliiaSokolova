@@ -12,7 +12,7 @@ from selenium.webdriver.chrome.service import Service
 
 class TestAddPlayerPage(unittest.TestCase):
     driver = None
-
+    full_name = "Jan Kowalski"
     @classmethod
     def setUp(self):
         os.chmod(DRIVER_PATH, 755)
